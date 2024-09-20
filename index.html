@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+        /* General Styling */
+        body {
+            width: 400px;
+            height: 600px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Button Container */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 15px 25px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            color: white;
+        }
+
+        /* Individual Button Colors */
+        #redBtn {
+            background-color: #e74c3c;
+        }
+
+        #blueBtn {
+            background-color: #3498db;
+        }
+
+        #greenBtn {
+            background-color: #2ecc71;
+        }
+
+        #yellowBtn {
+            background-color: #f1c40f;
+        }
+
+        #defaultBtn {
+            background-color: #7f8c8d; /* Default gray color */
+        }
+
+        /* Hover Effects */
+        button:hover {
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        /* Button Shadows */
+        button {
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Focus Styles */
+        button:focus {
+            outline: none;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Color Changer</h1>
+    <h2>Click a button to change the background color</h2>
+    <div class="buttons">
+        <button id="redBtn">Red</button>
+        <button id="blueBtn">Blue</button>
+        <button id="greenBtn">Green</button>
+        <button id="yellowBtn">Yellow</button>
+        <button id="defaultBtn">Default</button> <!-- New Default Button -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
